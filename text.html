@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <link rel="stylesheet" type="text/css" href="text.css" />
+</head>
+
+<body>
+    <div id="leftdiv" onclick="left1()">
+
+    </div>
+    <div id="rightdiv" onclick="right2()">
+
+    </div>
+    <script>
+        var left = document.getElementById('leftdiv');
+        var right = document.getElementById('rightdiv');
+        function left1() {
+
+            left.style.zIndex = 2;
+            right.style.zIndex = 1;
+        }
+        function right2() {
+            left.style.zIndex = 1;
+            right.style.zIndex = 2;
+        }
+    </script>
+</body>
+
+</html>
